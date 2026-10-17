@@ -368,20 +368,21 @@ img{
 /* =====================================================
                         TEAM
 ======================================================*/
-.thecoordinator{
+.thefigures{
     text-align: center;
     margin-bottom: 100px;
 }
-.thecoordinator-box{
+.thefigures-box{
     align-items: center;
     align-content: center;
+    margin-bottom: 10px;
 }
-.thecoordinator img, .staff-indiv img{
+.thefigures img, .staff-indiv img{
     width: 100%;
     max-width: 200px;
     box-shadow: -2px 2px 5px #888;
 }
-.thecoordinator-text{
+.thefigures-text{
     padding: 2%;
     display: grid;
     align-items: center;
