@@ -168,6 +168,7 @@ img{
 }
 .vitrine img{
     width: 100%;
+    color: #ffffff;
 }
 .vitrine-div{
     padding: 50px;
@@ -211,6 +212,7 @@ img{
 .band-link img{
     margin: 0 5px;
     width: 50px;
+    color: #ffffff;
 }
 .band-link:hover{
     background-color: #313131ca;
@@ -267,10 +269,11 @@ img{
     max-width: 150px;
 }
 .wmun{
-    background: url(../img/actions/wmun.webp) center top 40% no-repeat color(srgb 0.83 0.83 0.83); /* color in case image doesn't display */
+    background: url(../img/actions/wmun.webp) center top 40% no-repeat; /* color in case image doesn't display */
+    background-color: rgba(17, 17, 17, 0.753);
     background-size: cover;
     padding: 50px 0;
-    color: #fff;
+    color: #ffffff;
 }
 .wmun-icon{
     text-align: center;
@@ -278,11 +281,13 @@ img{
 }
 .wmun-icon img{
     width: 70px;
+    color: #ffffff;
 }
 .price{
     margin-top: 100px;
     padding: 50px 0;
-    background: url(../img/actions/prices.webp) center bottom no-repeat color(srgb 0.83 0.83 0.83); /* color in case image doesn't display */
+    background: url(../img/actions/prices.webp) center bottom no-repeat; /* color in case image doesn't display */
+    background-color: rgba(17, 17, 17, 0.753);
     background-size: cover;
     color: #fff;
 }
@@ -297,6 +302,7 @@ img{
 }
 .price-icon img{
     height: 70px;
+    color: #ffffff;
 }
 .price-text{
     text-align: justify;
@@ -637,7 +643,9 @@ img{
     text-align: center;
 }
 .signin input{
-    min-width: 220px;
+    /* min-width: 220px; */
+    width: 100%;
+    max-width: 300px;
 }
 .signin-btn{
     border: solid 1px var(--unblue);
@@ -658,7 +666,7 @@ img{
 .signup{
     margin-top: 100px;
 }
-.signup p{
+.signup-text{
     text-align: center;
 }
 .signup a{
@@ -668,11 +676,20 @@ img{
     color: var(--unblue);
 }
 .signup .committee-box{
-    text-align: center;
+    margin-bottom: 20px;
 }
 .signup img{
-    height: 2rem;
+    height: 1.5rem;
     margin: 0 0 3px 3px;
+}
+.signup .committee-name{
+    font-size: 1.2rem;
+    color:#009EDB ;
+    font-family: ChaumontScript;
+    margin: 0 7px;
+}
+.signup .committee-box i{
+    margin-left: 10px;
 }
 
 /* =====================================================
@@ -769,6 +786,9 @@ footer h4{
     border: none;
     background: linear-gradient(45deg, var(--unblue), var(--mun2));
     overflow: hidden;
+}
+.mun-icon img{
+    width: 148px;
 }
 .mun-wrap .mun-button, .mun-icon, .mun-text {
     transition: all 0.3s;

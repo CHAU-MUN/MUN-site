@@ -40,7 +40,7 @@
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="archive.html" title="Notre expérience">Anciennes conférences</a></li>
                         <li><a class="dropdown-item" href="documents.html" title="Lettres d'invitations, flyer, livret...">Documents utiles</a></li>
-                        <li><a class="dropdown-item" href="account.html" title="Par ici">Mon inscription</a></li>
+                        <li><a class="dropdown-item" href="account.html" title="Par ici">Inscriptions</a></li>
                         <li><a class="dropdown-item" href="../docs.html" title="Commencez à vous documenter">Documentation</a></li>
                     </ul>
                 </div>
@@ -61,12 +61,12 @@
                 <div class="col-xs-12 col-md-12 col-lg-5 vitrine-text">
                     <div>
                         <h1 class="vitrine-title">
-                            Mon inscription
+                            Inscriptions
                         </h1>
-                        <p class="vitrine-topic"><img src="../img/icons/note.webp" style="width: 20px; margin-right: 5px;" alt="Sujet ">
+                        <p class="vitrine-topic"><img src="../img/icons/note.webp" style="width: 20px; margin-right: 5px;" alt="Sujet : ">
                             Voix du monde, droits des femmes : batissons l'égalité ensemble
                         </p>
-                        <p class="vitrine-date"><img src="../img/icons/calendar.webp" style="width: 20px;margin: -4px 5px 0 0;" alt="Date ">
+                        <p class="vitrine-date"><img src="../img/icons/calendar.webp" style="width: 20px;margin: -4px 5px 0 0;" alt="Date : ">
                             17-19 mars 2027
                         </p> 
                     </div>
@@ -91,7 +91,7 @@
             const adresseMail = document.getElementById('signin-mail').value.trim();
             const resultatDiv = document.getElementById('attrib');
             // loading icon
-            resultatDiv.innerHTML = `<img src="../img/icons/loading.gif" alt="Loading icon">`;
+            resultatDiv.innerHTML = `<img src="../img/icons/loading.gif" alt="Icone de chargement...">`;
 
             if (!adresseMail) {
                 resultatDiv.innerHTML = '<span style="color:darkred;">Veuillez saisir une adresse mail</span>';
@@ -129,36 +129,46 @@
 
     <div class="signup">
         <h2>S'inscrire :</h2>
-        <p>
+        <p class="signup-text">
             Vous voulez vous inscrire ?
             <br>Envoyez nous un mail <a href="mailto:chaumun.lcdg@gmail.com">chaumun.lcdg@gmail.com</a>
         </p>
+        <br>
+        <h3>Nos comités :</h3>
+        <p class="signup-text">Tous les détails sont sur notre <a title="Visitez notre page MyMun 2027 pour en savoir plus" href="https://mymun.com/conferences/chaumun-2027">page MyMun</a></p>
         <div class="container">
-            <h4>Comités </h4>
-            <p>(le drapeau représente la langue du comité)</p>
-            <div class="row">
-                <div class="col-md-3 col-lg-2 offset-lg-1 committee-box">
-                    <img src="../img/flag-es.webp" alt="(es)"><p>Consejo de Seguridad</p>
-                </div>
-                <div class="col-md-3 col-lg-2 committee-box">
-                    <img src="../img/flag-en.webp" alt="(en)"><p>UNESCO (for beginners)</p>
-                </div>
-                <div class="col-md-3 col-lg-2 committee-box">
-                    <img src="../img/flag-en.webp" alt="(en)"><p>Security Council</p>
-                </div>
-                <div class="col-md-3 col-lg-2 committee-box">
-                    <img src="../img/flag-en.webp" alt="(en)"><p>Inter-Parliamentary Union</p>
-                </div>
-                <div class="col-md-4 col-lg-2 committee-box">
-                    <img src="../img/flag-en.webp" alt="(en)"><p>World Health Organisation <br>OR United Nations Population Fund <br><span style="color: red;">(UNCONFIRMED)</span></p>
-                </div>
-                <div class="col-md-4 col-lg-2 offset-lg-4 committee-box">
-                    <img src="../img/flag-fr.webp" alt="(fr)"><p>Organisation Internationale du Travail (débutant)</p>
-                </div>
-                <div class="col-md-4 col-lg-2 committee-box">
-                    <img src="../img/flag-fr.webp" alt="(fr)"><p>Conseil des Droits de l'Homme</p>
-                </div>
-            </div>
+            <p class="committee-box">
+                <img src="../img/flag-es.webp" alt="(es)"> <span class="committee-name">Conseil de sécurité</span> Comment protéger les femmes réfugiées et déplacées, particulièrement vulnérables en temps de guerre ?
+                <br>Difficulté :<img src="../img/icons/star.svg" alt="2"><img src="../img/icons/star.svg" alt="/"><img src="../img/icons/star_void.svg" alt="3"> <i>(comité hispanophone)</i>
+            </p>
+            <br>
+            <br>
+            <p class="committee-box">
+                <img src="../img/flag-en.webp" alt="(en)"> <span class="committee-name">UNESCO</span> Comment garantir l’accès égal à l'éducation secondaire aux femmes dans le monde ?
+                <br>Difficulté :<img src="../img/icons/star.svg" alt="1"><img src="../img/icons/star_void.svg" alt="/"><img src="../img/icons/star_void.svg" alt="3"> <i>(comité anglophone)</i>
+            </p>
+            <p class="committee-box">
+                <img src="../img/flag-en.webp" alt="(en)"> <span class="committee-name">Conseil de sécurité</span> Comment protéger les femmes réfugiées et déplacées, particulièrement vulnérables en temps de guerre ?
+                <br>Difficulté :<img src="../img/icons/star.svg" alt="2"><img src="../img/icons/star.svg" alt="/"><img src="../img/icons/star_void.svg" alt="3"> <i>(comité anglophone)</i>
+            </p>
+            <p class="committee-box">
+                <img src="../img/flag-en.webp" alt="(en)"> <span class="committee-name">Commission de la condition de la femme</span> Quelle reconnaissance et quelle rémunération, comment réduire les écarts de salaire entre hommes et femmes ?
+                <br>Difficulté :<img src="../img/icons/star.svg" alt="2"><img src="../img/icons/star.svg" alt="/"><img src="../img/icons/star_void.svg" alt="3"> <i>(comité anglophone)</i>
+            </p>
+            <p class="committee-box">
+                <img src="../img/flag-en.webp" alt="(en)"> <span class="committee-name">Organisation mondiale de la santé</span> Comment garantir l’accès universel aux soins de santé pour les femmes à travers le monde ?
+                <br>Difficulté :<img src="../img/icons/star.svg" alt="3"><img src="../img/icons/star.svg" alt="/"><img src="../img/icons/star.svg" alt="3"> <i>(comité anglophone)</i>
+            </p>
+            <br>
+            <br>
+            <p class="committee-box">
+                <img src="../img/flag-fr.webp" alt="(fr)"> <span class="committee-name">Organisation Internationale du Travail</span> Comment lutter contre les discriminations liées au genre et au handicap sur le marché du travail ?
+                <br>Difficulté :<img src="../img/icons/star.svg" alt="1"><img src="../img/icons/star_void.svg" alt="/"><img src="../img/icons/star_void.svg" alt="3"> <i>(comité francophone)</i>
+            </p>
+            <p class="committee-box">
+                <img src="../img/flag-fr.webp" alt="(fr)"> <span class="committee-name">Conseil des Droits de l'Homme</span> Comment protéger les femmes défenseures des droits humains, particulièrement exposés aux représailles dans les régimes autoritaires ?
+                <br>Difficulté :<img src="../img/icons/star.svg" alt="3"><img src="../img/icons/star.svg" alt="/"><img src="../img/icons/star.svg" alt="3"> <i>(comité francophone)</i>
+            </p>
         </div>
     </div>
 
@@ -192,7 +202,7 @@
                     </ul>
                 </div>
                 <div class="col-sm-12 col-md-5 footer-iframe">
-                    <h4>Nous trouver</h4>
+                    <h4>Nous trouver :</h4>
                     <a href="https://www.google.com/maps/place/Lyc%C3%A9e+Charles+de+Gaulle+Chaumont/@48.0738943,5.144561,16z/data=!4m6!3m5!1s0x47ece4ffff0cea07:0xf740ccf0041345e7!8m2!3d48.0734999!4d5.1468573!16s%2Fg%2F11b6dgb1gn?hl=fr&entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D"><img src="../img/maps.webp" alt="Où est le lycée Charles de Gaulle ?"></a>
                 </div>
             </div>
