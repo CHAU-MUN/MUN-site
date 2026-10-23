@@ -268,6 +268,13 @@ img{
 .sponsors-element img{
     max-width: 150px;
 }
+.sponsors-slide{
+    display: flex;
+    justify-content: space-around;
+}
+.sponsors-slide img{
+    max-width: 150px;
+}
 .wmun{
     background: url(../img/actions/wmun.webp) center top 40% no-repeat; /* color in case image doesn't display */
     background-color: rgba(17, 17, 17, 0.753);
