@@ -62,12 +62,12 @@ img{
 /* =====================================================
                     TEMPORARY
 ======================================================*/
-.thx{
+.registering{
     padding: 1rem 20px;
     margin: 50px 0;
     text-align: center;
 }
-.thx-text{
+.registering-text{
     font-size: 1.4rem;
     font-weight: bold;
     text-transform:uppercase;
@@ -75,8 +75,11 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+    a {
+        color: #000;
+    }
 }
-.thx img{
+.registering img{
     width: 100%;
 }
 .img-legend img{
@@ -719,7 +722,8 @@ img{
 .download .odd{
     background-color: #d4d4d4;
 }
-.download button{
+.download a{
+    color: #000;
     background-color: transparent;
     border: none;
     text-decoration: underline;
